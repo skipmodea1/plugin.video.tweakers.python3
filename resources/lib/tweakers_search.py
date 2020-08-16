@@ -189,15 +189,15 @@ class Main(object):
             list_item = xbmcgui.ListItem(LANGUAGE(30503))
             list_item.setArt({'thumb': thumbnail_url, 'icon': thumbnail_url,
                               'fanart': os.path.join(IMAGES_PATH, 'fanart-blur.jpg')})
-        list_item.setProperty('IsPlayable', 'false')
-        parameters = {"action": "search", "plugin_category": self.plugin_category, "url": str(self.next_url),
-                      "next_page_possible": self.next_page_possible}
-        url = self.plugin_url + '?' + urllib.parse.urlencode(parameters)
-        is_folder = True
-        # Add refresh option to context menu
-        list_item.addContextMenuItems([('Refresh', 'Container.Refresh')])
-        # Add our item to the listing as a 3-element tuple.
-        listing.append((url, list_item, is_folder))
+            list_item.setProperty('IsPlayable', 'false')
+            parameters = {"action": "search", "plugin_category": self.plugin_category, "url": str(self.next_url),
+                          "next_page_possible": self.next_page_possible}
+            url = self.plugin_url + '?' + urllib.parse.urlencode(parameters)
+            is_folder = True
+            # Add refresh option to context menu
+            list_item.addContextMenuItems([('Refresh', 'Container.Refresh')])
+            # Add our item to the listing as a 3-element tuple.
+            listing.append((url, list_item, is_folder))
 
         # Add our listing to Kodi.
         # Large lists and/or slower systems benefit from adding all items at once via addDirectoryItems
