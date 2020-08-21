@@ -15,7 +15,7 @@ import xbmc
 import xbmcgui
 import xbmcplugin
 
-from tweakers_const import SETTINGS, LANGUAGE, VERSION, YOUTUBE_ID_STRING_TO_FIND, convertToUnicodeString, log
+from resources.lib.tweakers_const import SETTINGS, LANGUAGE, VERSION, YOUTUBE_ID_STRING_TO_FIND, convertToUnicodeString, log
 
 
 

@@ -18,7 +18,7 @@ import xbmc
 import xbmcgui
 import xbmcplugin
 
-from tweakers_const import ADDON, LANGUAGE, IMAGES_PATH, VERSION, convertToUnicodeString, log, getSoup
+from resources.lib.tweakers_const import ADDON, LANGUAGE, IMAGES_PATH, VERSION, convertToUnicodeString, log, getSoup
 
 
 #
